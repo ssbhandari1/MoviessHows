@@ -63,7 +63,7 @@ const handleAllSearchMovies=()=>{
          
             <Box sx={{ width: '40%', height: '100%', position: 'absolute', background: 'linear-gradient(90deg, rgba(12,8,89,1) 19%, rgba(0,212,255,0) 100%)', zIndex: "1",display:'felx',flexDirection:'column',color:'white' ,justifyContent:'space-around'}}>
             <Typography sx={{fontSize:'2.5rem',fontWeight:'600',color:'yellow',fontFamily:'fantasy',marginTop:'3rem',marginLeft:'1rem'}}>Enjoy Moives & Shows</Typography>
-            <FormControl variant="standard" sx={{ m: 1,mt:3, minWidth: 350 ,color:'white' }}>
+            {/* <FormControl variant="standard" sx={{ m: 1,mt:3, minWidth: 350 ,color:'white' }}>
             <InputLabel sx={{input:{color:'whtie'},color:'white',fontWeight:'600',fontSize:'1.4rem'}} id="demo-simple-select-standard-label"    focused>Select Your Movies & shows</InputLabel>
             <Select
             sx={{color:"blue",input:{color:'white',}}}
@@ -82,14 +82,14 @@ const handleAllSearchMovies=()=>{
          
          
         </Select>
-        </FormControl>
-{
+        </FormControl> */}
+{/* {
   selectMovieShow ? 
   <Typography sx={{marginTop:'2rem',marginLeft:'1rem',backgroundColor:'rgba(0,0,0,0.6)',width:'100px'}}> <Button variant='outlined' color='secondary'sx={{width:'100%'}} onClick={handleAllSearchMovies}> Search</Button></Typography>
 
   :
   ""
-}       
+}        */}
             </Box>
             <Slider {...settings}>
            {posters.map((image,index)=>{
@@ -97,7 +97,7 @@ const handleAllSearchMovies=()=>{
             return(
               <CardMedia
               component="img"
-
+key={index}
               image={image.src}
               alt="poster"
               sx={{ width: '100%', height: '80vh', objectFit: 'fill', }}
