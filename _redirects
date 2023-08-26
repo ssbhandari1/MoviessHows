@@ -1,0 +1,2 @@
+/api/*    http://www.omdbapi.com/:splat   200
+/*        /index.html                  200
